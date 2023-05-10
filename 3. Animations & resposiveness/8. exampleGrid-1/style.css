@@ -1,0 +1,44 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+.container{
+    text-align: center;
+    border: 10px solid lightblue;
+    display: grid;
+
+    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 200px 200px 200px;
+
+    grid-template-areas: 
+    'header header header header header header'
+    'menu main main right right right'
+    'menu footer footer footer footer footer';
+}
+
+.box{
+    border: 10px solid lightblue;
+    padding: 70px 0;
+}
+
+#Header{
+    grid-area: header;
+}
+
+#Menu{
+    grid-area: menu;
+}
+
+#Main{
+    grid-area: main;
+}
+
+#Right{
+    grid-area: right;
+}
+
+#Footer{
+    grid-area: footer;
+}

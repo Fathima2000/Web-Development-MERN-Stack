@@ -1,0 +1,18 @@
+h1{
+    /* horizantal vertical blue clolor*/
+    text-shadow: 3px 3px red;
+    text-shadow: 3px 3px 5px red;
+    text-shadow: 3px 3px red,10px 10px green;
+}
+
+.box{
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    box-shadow: 10px 10px; /* By default text color shawo is taken */
+    box-shadow: 10px 10px green;
+    box-shadow: 10px 10px green, 20px 20px red;
+    color: red;
+    box-shadow: 10px -10px green;
+    box-shadow: -10px 10px green;
+}

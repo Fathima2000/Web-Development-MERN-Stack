@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+
+        /* content size is made smaller automatically to adjust according to padding, margin */
+        /* remeber if you are using % mainly */
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            height: 400px;
+            border: 1px solid black;
+            display: flex;
+            /* flex-direction: row; */
+            /* flex-direction: coloumn-reverse; */
+            /* width is maintained from flex-wrap; */
+            /* flex-wrap: wrap-reverse; */
+            flex-wrap: wrap; 
+            flex-flow: row wrap;
+
+            /* justify-content: main axis */
+            /* justify-content: flex-start;
+            justify-content: flex-end;
+            justify-content: space-around;
+            justify-content: space-between;
+            justify-content: space-evenly; */
+
+            /* justify-content: center;
+            align-items: center; */
+            
+            /* gap:  10px; */
+            /* row-gap: 10px; */
+            /* column-gap: 10px; */
+
+            /* align-content: b/w rows */
+
+        }
+
+        .container1{
+            height: 400px;
+            border: 1px solid black;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+
+            /* align-items: cross-axis  (by default strech)*/
+            align-items: baseline;            
+        }
+
+        .box{
+            background-color: aqua;
+            border: 1px solid green;
+            width: 150px;
+        }
+
+        /* by default order is 0 */
+        #box-1{
+            order: 1;
+
+            /* width of content */
+            /* width-overflow:hidden, flax-basis->responsive ---content */
+            /* flex-basis: 200px; */
+        }
+
+        #box-3{
+            order: 4;
+        }
+
+        #box-4{
+            order: 2;
+            /* flex-grow: feulat value 1;, shink 0 */
+            /* flex-grow: 1; */
+
+            /* 5 is speed, remove flex-wrap:wrap*/
+            /* flex-shrink: 5;  */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box-1">box-1</div>
+        <div class="box" id="box-2">box-2</div>
+        <div class="box" id="box-3">box-3</div>
+        <div class="box" id="box-4">box-4</div>
+    </div>
+
+    <!-- <div class="container1">
+        <div class="box"><h1>box-1</h1></div>
+        <div class="box"><h3>box-2</h3></div>
+        <div class="box"><h6>box-3</h6></div>
+        <div class="box"><h1>box-4</h1></div>
+    </div> -->
+    
+</body>
+</html>

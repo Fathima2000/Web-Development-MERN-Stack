@@ -1,0 +1,16 @@
+.box1{
+            border: 1px solid black;
+            height: 100px;
+            max-height: 100px;
+            /* To overcome this problem */
+            /* overflow: scroll; */
+            
+        }
+        
+.box2{
+            border: 1px solid black;
+            margin-top: 100px;
+            /* Block grows automatically */
+            min-height: 100px;
+
+        }
